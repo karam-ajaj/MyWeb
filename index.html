@@ -31,6 +31,25 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//karamajaj.nl:81/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
     <link href="start.css" rel="stylesheet" />
 
     <link rel="icon" href="./rsrc/icons/main/website2.png">
@@ -67,9 +86,10 @@
                     <!-- <span class="branding-bar">PiHole</span> -->
                 </a>
 
-                <div data-role="tile" data-size="small" class="bg-teal fg-white col-1 row-6">
-                    <span class="mif-windows icon"></span>
-                </div>
+
+                <a href="http://karamajaj.nl:4004/" data-role="tile" data-size="small" class="bg-teal fg-white col-1 row-6" target="_blank">
+                    <img src="./rsrc/icons/analytics/glances.png" class="icon" />
+                </a>
                 <a href="http://karamajaj.nl:4002/" data-role="tile" data-size="small" class="bg-brown fg-white col-2 row-6" target="_blank">
                     <span class="mif-wikipedia icon"></span>
                 </a>
